@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greece</title>
+    <style>
+        .flag{
+            width: 900px;
+            height: 600px;
+            background-color: rgb(13, 94, 175);;
+            position: relative;
+        }
+        .white-strip{
+            position: relative;
+            width: 100%;
+            height: 66px;
+            background-color: white;
+            top: 11%;
+            margin-bottom: 66px;
+        }
+        .square{
+            position: absolute;
+            width: 330px;
+            height: 330px;
+            background-color: rgb(13, 94, 175);
+            z-index: 1;
+        }
+        #horizontal-strip{
+            position: absolute;
+            width: 100%;
+            height: 66px;
+            background-color: white;
+            top: 132px;
+        }
+        #vertical-strip{
+            position: absolute;
+            height: 100%;
+            width: 66px;
+            background-color: white;
+            left:132px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="square">
+            <div id="horizontal-strip"></div>
+            <div id="vertical-strip"></div>
+        </div>
+        <div class="white-strip"></div>
+        <div class="white-strip"></div>
+        <div class="white-strip"></div>
+        <div class="white-strip"></div>
+    </div>
+</body>
+</html>
